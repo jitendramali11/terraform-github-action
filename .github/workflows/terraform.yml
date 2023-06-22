@@ -1,5 +1,4 @@
 name: "tf deploy for Azure"
-
 on:
   push:
     branches: 
@@ -10,8 +9,7 @@ on:
   ARM_CLIENT_SECRET: ${{env.AZURE_CLIENT_SECRET }}
   ARM_SUBSCRIPTION_ID: ${{env.AZURE_SUBSCRIPTION_ID }}
   ARM_TENANT_ID: ${{env.AZURE_TENANT_ID }}
-
-  ROOT_PATH: ''../../src/terraform'
+  ROOT_PATH: '../../src/terraform'
 
 jobs:
   terraform:
