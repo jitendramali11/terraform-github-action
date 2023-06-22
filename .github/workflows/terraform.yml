@@ -1,4 +1,4 @@
-name: 'tf deploy for Azure'
+name: "tf deploy for Azure"
 
 on:
   push:
