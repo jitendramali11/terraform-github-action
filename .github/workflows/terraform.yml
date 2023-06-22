@@ -6,9 +6,6 @@ on:
      - main
   pull_request:
 
-env:
-  
-
 jobs:
   terraform:
     name: 'Terraform Plan'
