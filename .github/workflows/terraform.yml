@@ -73,7 +73,7 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Apply
-      run: terraform Apply --auto-approve
+      run: terraform apply --auto-approve
       working-directory: ${{env.ROOT_PATH}}
 
    
