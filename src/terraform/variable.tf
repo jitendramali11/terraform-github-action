@@ -1,5 +1,5 @@
 variable "resource_group_name" {
-    default = "test-rg-demo"
+    default = "test-rg-demo-pihu"
     description = "the name of resource group creation"
 }
 
