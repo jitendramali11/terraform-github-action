@@ -2,7 +2,7 @@ name: "tf Azure Resource Deployment"
 on:
   push:
     branches: 
-    - main
+    - feature/terraform-azure-resources-deployment
   pull_request:
   workflow_dispatch:
  
