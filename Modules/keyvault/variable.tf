@@ -9,21 +9,8 @@ variable "resource_group_name_prefix" {
  // default     = "rg"
   description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
 }
-variable "storage_account" {
-  default = "demoterraformstr"
-  description = "storage accoount creation"
-}
 
 variable "keyvaultname" {
-  default = "demoterraformkv"
+  default = "kvpihu"
   description = "keyvault description"
-}
-
-variable username {
- default = "Jitendra"
- description = "The useer name"
-}
-
-output printname {
-  value = var.username
 }
