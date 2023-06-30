@@ -38,12 +38,12 @@ jobs:
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
       run: terraform init
-      working-directory: ${{env.ROOT_PATH}}
+      working-directory: '${{env.ROOT_PATH}}/Modules'
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: terraform plan 
-      working-directory: ${{env.ROOT_PATH}}
+      working-directory: '${{env.ROOT_PATH}}/Modules'
   
   terraform_apply:
     name: 'Terraform Apply'
@@ -70,11 +70,11 @@ jobs:
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
       run: terraform init
-      working-directory: ${{env.ROOT_PATH}}
+      working-directory: '${{env.ROOT_PATH}}/Modules'
 
     # Generates an execution plan for Terraform
     - name: Terraform Apply
       run: terraform apply --auto-approve
-      working-directory: ${{env.ROOT_PATH}}
+      working-directory: '${{env.ROOT_PATH}}/Modules'
 
    
